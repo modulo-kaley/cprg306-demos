@@ -21,7 +21,9 @@ export default function Home() {
             <br />
             <Link href="week-2">View Page</Link>
             <br />
-            <Link href="">View Code</Link>
+            <Link href="https://github.com/ashx3s/cprg306-demos">
+              View Code
+            </Link>
           </li>
         </ul>
       </section>
