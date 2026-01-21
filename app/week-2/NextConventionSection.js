@@ -6,7 +6,7 @@ export default function NextConventionSection() {
       <h2 className="text-2xl my-2">{sectionTitle.toUpperCase()}</h2>
       <p className="text-blue-200 text-5xl my-5">
         {/* This will conditionally render the message "Hello Pingu" or "Who even are you??" based on the evaluation of userName ==="Pingu" */}
-        {userName === "Pingu" ? "Hello Pingu!" : "Who even are you???"}
+        {userName === "pingu" ? "Hello Pingu!" : "Who even are you???"}
       </p>
       <ul>
         <li>
