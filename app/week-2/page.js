@@ -1,9 +1,13 @@
+import PageHeader from "../components/PageHeader";
+import EndangeredPenguinSection from "../components/EndangeredPenguinSection";
+import FavouritePenguinSection from "../components/FavouritePenguinSection";
 export default function Page() {
   return (
     <main>
-      <header>
-        <h1>Week 2</h1>
-      </header>
+      <PageHeader title="Week 2" description="static components" />
+
+      <FavouritePenguinSection />
+      <EndangeredPenguinSection />
     </main>
   );
 }
