@@ -5,14 +5,27 @@ const cats = [
   {
     id: 324356753,
     name: "Thomas O'Malley",
+    age: 8,
   },
   {
     id: 890654645,
     name: "Duchess",
+    age: 7,
   },
   {
     id: 889989989,
     name: "Toulouse",
+    age: 1,
+  },
+  {
+    id: 889984389,
+    name: "Marie",
+    age: 1,
+  },
+  {
+    id: 329983389,
+    name: "Berloiz",
+    age: 1,
   },
 ];
 
@@ -36,10 +49,12 @@ export default function Page() {
       <section className="mx-8 my-4">
         <h2 className="text-2xl">Return in Iterative Logic Example</h2>
         <p>If you use curly brackets, use a return statement as well</p>
-        <ul classname="my-2">
-          {cats.map((cat) => {
-            return <li key={cat.id}>{cat.name}</li>;
-          })}
+        <ul className="my-2">
+          {cats
+            .filter((cat) => cat.age < 2)
+            .map((youngCat) => {
+              return <li key={youngCat.id}>{youngCat.name}</li>;
+            })}
         </ul>
       </section>
     </main>
